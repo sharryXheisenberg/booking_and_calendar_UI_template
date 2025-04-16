@@ -1,5 +1,5 @@
 # **BookingAgent**
-A modern React-based application for managing and scheduling appointments with ease. Built with Vite, Tailwind CSS, and Redux Toolkit, this app offers robust functionalities with a better user interface.
+A modern TypeScript + React-based application for managing and scheduling appointments with ease. Built with Vite, Tailwind CSS, and Redux Toolkit, this app offers robust functionalities with a better user interface.
 
 ## 🚀 Live Project
 Check out the live version of the app here: [BookingAgent](https://booking-and-calendar-ui-template.vercel.app/)  
@@ -10,6 +10,8 @@ Explore the features and experience the seamless interface directly in your brow
 - **React**: Latest version for building modern UI components.
 - **Tailwind CSS**: Utility-first CSS framework for building custom designs without leaving your HTML.
 - **ESLint**: A pluggable linter tool for ensuring code quality.
+- **TypeScript**: Strongly typed language for better developer experience and fewer bugs.
+
 
 ## **Functionalities**
 1. **Create**: Add and schedule new appointments.
@@ -32,7 +34,7 @@ npm install -D tailwindcss postcss autoprefixer
  ```
 2. Initialize Tailwind configuration:
  ``` bash
- npx tailwindcss init
+npx tailwindcss init -p
  ```
 3. Update the tailwind.config.js file with the following content to specify which files Tailwind should scan:
   ``` bash
