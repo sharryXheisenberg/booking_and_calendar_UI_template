@@ -38,16 +38,18 @@ npx tailwindcss init -p
  ```
 3. Update the tailwind.config.js file with the following content to specify which files Tailwind should scan:
   ``` bash
-import { defineConfig } from 'vite';
-import react from '@vitejs/plugin-react';
-
-// https://vitejs.dev/config/
-export default defineConfig({
-  plugins: [react()],
-  optimizeDeps: {
-    exclude: ['lucide-react'],
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}"
+  ],
+  theme: {
+    extend: {},
   },
-});
+  plugins: [],
+}
+
 
 ```
  4. Add the following lines to your src/index.css (or src/main.css if you’re using that):
